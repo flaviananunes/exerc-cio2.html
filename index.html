@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execício 3</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+			background-color: #D97D48;
+			margin: 0;
+			
+        }
+		
+		header{
+			background-color: #F2B872;
+            height: 80px;
+			color: #732727;
+			margin-bottom: 10px;
+			margin-top:0px;
+			padding: 5px;
+			border-bottom: 5px solid #732727;
+			
+        }
+		
+        h2{           
+            color: #732727;
+            width: 290px;
+            padding: 15px;
+			
+        }
+		
+		label{
+			color: #732727;
+			margin-left: 15px;
+			font-weight: bold;
+			
+		}
+
+        hr{
+            width: 310px;
+            border: 2px solid #732727;
+        }
+
+        form{
+            background-color: #F2B872;
+            border:3px solid #732727;
+            width: 550px;
+			padding: 25px;
+			margin-left: 500px;
+			
+        }
+
+        input{
+            width: 300px;
+            border-bottom: 2px solid #732727 ;
+            margin: 7px;
+            padding: 8px;
+            border-left: #F2B872;
+			border-right: #F2B872;
+			border-top: #F2B872;
+			width: 520px;
+
+        }
+
+        input::placeholder{
+            color: #732727;
+            font-weight: bold;
+			
+			
+        }
+
+        button{
+            border:3px solid #732727 ;
+            background-color: #732727;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 28px;
+            width: 215px;
+			
+			
+        }
+
+        button.btn_cancelar{
+            background-color: #3A3B40s !important;
+            color: #F2B872 !important;
+        }
+
+        button.btn_cancelar:hover{
+            border: 3px solid #732727;
+        }
+        button:hover{
+            border:3px solid #BF5349;
+        }
+		
+		button.btn_salvar{
+			background-color: #BF5349 !important;
+            color: #732727 !important;
+		}
+		
+    </style>
+</head>
+<body>
+    
+   
+	<header>
+        <h1>SISTEMA DE COMPRAS</h1>
+    </header>
+	
+	
+     
+    <form action="exercicio.js" method="POST">
+        
+		<h2>Formulário De Produtos</h2>
+        <hr>
+		<div>
+		<label>Nome:</label>
+        <input type="text" id="Nome" placeholder="Nome" required>
+		</div>
+		
+		<div>
+		<label>Data de nascimento:</label>
+        <input type="date" id="nascimento" placeholder="dd/mm/aaaa" required>
+		</div>
+		
+		<div>
+		<label>E-mail:</label>
+        <input type="email" id="email" placeholder="ex. pedro@pedro.com.br" required>
+		</div>
+		
+		<div>
+		<label>Telefone:</label>
+        <input type="text"id="Telefone" placeholder="ex. 48 99999-1234" required>
+		</div>
+		
+        <br>
+		<center>
+        <button type="reset" class="btn_cancelar">Cancelar</button>
+        <button type="submit" class="btn_salvar" onclick="salvar()">Salvar</button>
+		</center>
+    </form>
+    <center></center>
+	
+	<script type="text/javascript">
+		function salvar(){
+		
+			alert('Informações salvas!')
+		}
+	</script>
+	
+	
+</body>
+</html>
